@@ -1,7 +1,7 @@
 streamlit
 google-generativeai
 deepgram-sdk
-pinecone-client
+pinecone
 youtube-transcript-api
 pypdf
 audio-recorder-streamlit
