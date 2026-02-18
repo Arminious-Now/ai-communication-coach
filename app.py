@@ -80,14 +80,14 @@ if gemini_key and deepgram_key and pinecone_key:
             if "Coach" in mode:
                 # Placeholder RAG logic
                 prompt = f"User Question: {transcript}. Provide brief coaching advice."
-                model = genai.GenerativeModel('gemini-2.0-flash') # Updated model name
+                model = genai.GenerativeModel('gemini-2.5-flash') # Updated model name
                 res = model.generate_content(prompt)
                 ai_text_response = res.text
                 
             else:
                 # Practice Mode
                 prompt = f"You are a roleplay partner. User said: {transcript}. Respond in character (2 sentences max)."
-                model = genai.GenerativeModel('gemini-2.0-flash')
+                model = genai.GenerativeModel('gemini-2.5-flash')
                 res = model.generate_content(prompt)
                 ai_text_response = res.text
 
