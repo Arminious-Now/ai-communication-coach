@@ -1,6 +1,6 @@
 streamlit
 google-generativeai
-deepgram-sdk>=3.0.0
+deepgram-sdk
 pinecone-client
 youtube-transcript-api
 pypdf
